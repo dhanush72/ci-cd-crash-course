@@ -19,10 +19,10 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@7
+        uses: actions/checkout@v7
 
       - name: Set up Node.js
-        uses: actions/setup-node@7 # uses - pre-defined github action
+        uses: actions/setup-node@v7 # uses - pre-defined github action
         with:
           node-version: 24
           cache: npm
