@@ -43,5 +43,6 @@ test('GET /api/health returns a healthy response', async () => {
 app.get('/api/version', (_request, response) => {
   response.json({
     version: process.env.APP_VERSION ?? 'development',
+    status: 'ok',
   });
 });
